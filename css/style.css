@@ -1,0 +1,123 @@
+body{
+    font-family: 'Alegreya Sans SC', serif;
+    background: #f1f1f1 url('../images/concrete_seamless.png');
+  }
+  
+  header{
+    display:flex;
+    flex-flow: row wrap;
+    align-self: center;
+    z-index: -1;
+  }
+  
+  .nav_links{
+    display:flex;
+    flex-direction: column;
+  }
+
+  p {
+    padding: 0 30px;
+  }
+  
+  a:visited{
+    color:blue
+  }
+
+
+  .nav_item a{
+    padding: 10px;
+    color: #50C7C7;
+    display: flex;
+  }
+  
+
+  .pricing{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    display:flex;
+    flex-flow: column;
+    flex-basis: 450px;
+  }
+
+  .card > header{
+    background: #288080;
+    border: 2px solid #454545;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    width:100%;
+  }
+  
+
+  .gallery{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  
+  .gallery img{
+    border: 10px solid #50C7C7;
+    width: 300px;
+    margin: 10px;
+  }
+  
+  #logo{
+    width:100vw;
+    position:relative;
+      transition-property: filter, border-radius, border; 
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in;
+    
+     animation-name: slidein;
+      animation-duration: 5s;
+  }
+
+  @keyframes slidein {
+    from {
+    width:50px;
+    opacity:0;
+    }
+    to {
+    width:425px;
+    opacity: 1;
+    }
+  }
+
+  @media screen and (min-width: 850px){
+    header{
+      position: sticky; top: 0;
+      z-index: 200;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .nav_links{
+      position: sticky; top: 0;
+      z-index: 177;
+      display: flex;
+      flex-flow: row wrap;
+    }
+    
+    .card{
+      flex-basis: 250px;
+    }
+
+  @media screen and (min-width: 1000px) {
+    
+  }
+
+  @media print {
+    
+    body{
+      background-color: #f1f1f1;
+    }
+    
+}
+  
